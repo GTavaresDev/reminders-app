@@ -1,4 +1,5 @@
-import Task from "@/app/types/tasks";
+import Task from "@/types/tasks";
+import { Information } from "./Information.component";
 
 type TaskListProps = {
   tasks: Task[];
@@ -16,8 +17,13 @@ export default function TaskList({ tasks }: TaskListProps) {
             key={task.id}
             className="flex items-center gap-3 rounded-lg border border-zinc-100 px-4 py-3"
           >
+            <Information
+              href={`/tasks/${task.id}`}
+              size={24}
+              ariaLabel="Ver detalhes"
+            />
+            <span className="flex-1 text-sm text-zinc-800">{task.title}</span>
             <div className="h-4 w-4 flex-shrink-0 rounded border border-zinc-300" />
-            <span className="text-sm text-zinc-800">{task.title}</span>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import initialTasks from "@/app/data/tasks";
-import Task from "@/app/types/tasks";
+import initialTasks from "@/data/tasks";
+import Task from "@/types/tasks";
 import { generateId } from "../utils/generateId";
 
 export function useTasks() {
