@@ -9,7 +9,7 @@ export default function TaskList({ tasks }: TaskListProps) {
   return (
     <div>
       <h1 className="mb-6 text-3xl font-semibold tracking-tight text-black">
-        Tarefas
+        Tarefas 1
       </h1>
       <div className="flex flex-col gap-2">
         {tasks.map((task) => (
